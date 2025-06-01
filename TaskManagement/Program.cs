@@ -17,7 +17,7 @@ namespace TaskManagement
         [STAThread]
         static void Main()
         {
-            LogManager.LoadConfiguration("nlog.config");
+            LogManager.Setup().LoadConfigurationFromFile();
             var logger = LogManager.GetCurrentClassLogger();
 
             try

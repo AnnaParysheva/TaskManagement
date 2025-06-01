@@ -72,7 +72,7 @@ namespace TaskManagement
             btnDelete.Enabled = _currentEditingId.HasValue;
         }
 
-        private async void btnAdd_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             _logger.Info("Подготовка к добавлению новой задачи");
             ClearInputs();
